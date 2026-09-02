@@ -16,6 +16,8 @@ The user enters their birthday in `MM/DD/YYYY` format. The program uses the curr
 - Displays the user's calculated age
 - Grants access to users who are 18 or older
 - Denies access to users who are under 18
+- Handles incorectly formatted birthday inputs without crashing
+- Displays an error message when the user does not enter their birthday in the expected format
 
 ## Example
 
@@ -43,6 +45,8 @@ While creating this project, I practiced several Python fundamentals, including:
 
 I also learned why subtracting the birth year from the current year is not always enough to determine someone's exact age. The program checks whether the user's birthday has occurred yet during the current year and adjusts their age when necessary.
 
+I also learned how to use try and except to handle errors caused by invalid user input. Instead of allowing the program to crash when a user enters their birthday in an incorrect format, the program catches the ValueError and displays an error message.
+
 ## Future Improvements
 
 Some improvements I plan to make as I learn more Python include:
@@ -52,6 +56,7 @@ Some improvements I plan to make as I learn more Python include:
 - Allowing the user to try again after entering invalid information
 - Improving input validation and error handling
 - Making it a web application
+- Expanding input validation and error handling
 
 ## Requirements
 
