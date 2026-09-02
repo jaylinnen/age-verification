@@ -51,6 +51,7 @@ Some improvements I plan to make as I learn more Python include:
 - Preventing future dates from being entered as birthdays
 - Allowing the user to try again after entering invalid information
 - Improving input validation and error handling
+- Making it a web application
 
 ## Requirements
 
