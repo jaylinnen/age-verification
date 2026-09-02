@@ -10,9 +10,18 @@ try:
     month = int(month)
     day = int(day)
     year = int(year)
+
+    
 except ValueError:
     print("Invalid date format. Please enter your birthday in MM/DD/YYYY format.")
     exit()
+
+try:
+    date(year, month, day)
+except ValueError:
+    print("Invalid date. Please enter a valid date in MM/DD/YYYY format.")
+    exit()
+
 
 today = date.today()
 
