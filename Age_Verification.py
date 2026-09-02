@@ -5,11 +5,14 @@ from datetime import date
 print("Hello, welcome to the website. You must be 18 or older to access this site.")
 birthday = input("Enter your birthday (MM/DD/YYYY): ")
 
-month, day, year = birthday.split("/")
-
-month = int(month)
-day = int(day)
-year = int(year)
+try:
+    month, day, year = birthday.split("/")
+    month = int(month)
+    day = int(day)
+    year = int(year)
+except ValueError:
+    print("Invalid date format. Please enter your birthday in MM/DD/YYYY format.")
+    exit()
 
 today = date.today()
 
