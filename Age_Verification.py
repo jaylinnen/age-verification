@@ -17,13 +17,16 @@ except ValueError:
     exit()
 
 try:
-    date(year, month, day)
+    birthday = date(year, month, day)
 except ValueError:
     print("Invalid date. Please enter a valid date in MM/DD/YYYY format.")
     exit()
 
-
 today = date.today()
+
+if birthday > today:
+    print("Invalid Birthday. Birthdate cannot be in the future. Please enter a valid date.")
+    exit()
 
 age = today.year - year
 
